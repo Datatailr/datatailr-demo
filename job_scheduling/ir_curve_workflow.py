@@ -5,11 +5,11 @@ import datetime
 IMAGE = 'Datatailr Demo Batch'
 ENTRYPOINT_BASE = 'dt_batch.'
 SCHEDULE_IN_MINUTES_FROM_NOW = 2
-scheduld_time = datetime.datetime.now() + datetime.timedelta(minutes=SCHEDULE_IN_MINUTES_FROM_NOW)
+scheduled_time = datetime.datetime.now() + datetime.timedelta(minutes=SCHEDULE_IN_MINUTES_FROM_NOW)
 
-schedule = Schedule(at_minutes=[scheduld_time.minute],
+schedule = Schedule(at_minutes=[scheduled_time.minute],
                     # in_months=['Feb'], day_of_month=31,
-                    at_hours=[scheduld_time.hour], timezone='UTC')
+                    at_hours=[scheduled_time.hour], timezone='UTC')
 
 with DAG(Name=f'IR Curve Fit Cash Flow', Tag='dev', Schedule=schedule) as dag:
     start_date, end_date = '2022-01-01', '2024-01-01'

@@ -1,7 +1,7 @@
 from dt.scheduler.api import DAG, Schedule, Task
 
 IMAGE = 'Dt Quantlib'
-BASE_ENTRYPOINT = 'dt_quantlib.batches.'
+BASE_ENTRYPOINT = 'dt_quantlib.batch.'
 SCHEDULE = Schedule(at_hours=[13], at_minutes=[45], timezone='CET')
 
 START_DATE = '2013-08-01'
