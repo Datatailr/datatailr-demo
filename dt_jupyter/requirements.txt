@@ -1,0 +1,6 @@
+notebook
+jupyterlab
+ipywidgets
+bqplot
+ipyvolume
+ipympl

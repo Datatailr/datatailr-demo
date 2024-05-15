@@ -1,6 +1,0 @@
-flask
-numpy
-streamlit
-matplotlib
-pandas
-plotly
