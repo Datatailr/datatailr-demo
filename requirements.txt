@@ -1,4 +1,3 @@
-flask
 numpy
 streamlit
 matplotlib
